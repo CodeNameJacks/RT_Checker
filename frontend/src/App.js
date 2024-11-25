@@ -1,15 +1,20 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+/* Add/Import Routes */
+//import Home from './components/Home';
+import HamburgerNav from './components/HamburgerNav';
 
 function App() {
 
-  const [response, setResponse] = useState("Waiting for response from Backend")
+  //**KEEP THIS BLOCK OF CODE FOR TESTING SERVER CONFIGURATION AND BACKEND CONNECTIVITY TO FRONTEND**
+  /*const [response, setResponse] = useState("Waiting for response from Backend")
 
   useEffect(() => {
     fetch("api/test").then(res => res.json()).then(data => { setResponse(data.response) })
   }, [])
-
 
   return (
     <div className="App">
@@ -20,7 +25,24 @@ function App() {
         </p>
       </header>
     </div>
+  );*/
+
+
+  return (
+    <div>
+      <header>
+        <HamburgerNav />
+      </header>
+      <div>
+        <BrowserRouter>
+          <Routes>
+
+
+
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </div>
   );
 }
-
 export default App;

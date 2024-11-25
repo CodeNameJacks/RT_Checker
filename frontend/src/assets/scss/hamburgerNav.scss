@@ -1,0 +1,17 @@
+.navlist{
+    background-color: green;
+    width: 25%;
+    height: 100vh;
+    
+    li{
+        list-style-type: none;
+        padding-bottom: 30px;
+
+        a{
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            
+        }
+    }
+}
