@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 /* Add/Import Routes */
 //import Home from './components/Home';
 import HamburgerNav from './components/HamburgerNav';
+import Home from './pages/home';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
+            <Route path='/' element={<Home />} />
 
 
 
